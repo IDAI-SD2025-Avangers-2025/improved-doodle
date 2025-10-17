@@ -5,13 +5,16 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Flexbox 1 CSS</title>
 
-     <style>
+<style>
           .contenedor{
 			width: 23%;
 			height: 400px;
 			background-color: #dedede;
 			float: left;
 			margin: 10px;
+
+               /* Declarar flexbox */
+               display: flex;
           }
 
 		.items{
@@ -23,6 +26,23 @@
 			line-height: 100px;
 			font-size: 22px;
 		}
+
+          .c1{
+               flex-flow: column wrap;
+          }
+
+          .c2{
+               flex-flow: column-reverse wrap-reverse;
+          }
+
+          .c3{
+               flex-flow: row wrap;
+          }
+
+          .c4{
+               flex-flow: row-reverse wrap-reverse;
+          }
+
      </style>
 </head>
 <body>
